@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 1</title>
+  
+</head>
+<body>
+    <img id="pap">
+        <p id="txt">
+            
+        </p>
+
+
+
+        <script>
+            var nombre = window.prompt("Entrez un nombre: ");
+            var multi = window.prompt("Entrez un multiplicateur:");
+            afficheImg("papillon.jpg");
+    
+            function produit(nombre, multi) {
+                var resultat = nombre * multi;
+                return resultat;
+            }
+            let T=produit(nombre, multi);
+            document.getElementById("txt").innerHTML= "RESUL"+T;
+            
+            function afficheImg(papillon) 
+            {
+    
+                document.getElementById("pap").setAttribute("src", papillon);
+            } 
+            // var puissance = nombre * nombre;
+                // return nombre+" puissance "+nombre+" = "+puissance;
+        </script>
+   
+</body>
+
+</html>
