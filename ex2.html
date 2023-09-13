@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phase 9</title>
 </head>
+
 <body>
+    <p id="txt"></p>
     <script>
-        var str1=window.prompt("Entrez vos mots à lister: ");
+        var str1 = window.prompt("Entrez vos mots à lister: ");
 
-        function strtok(str1, str2, n)
-        {
-            
-        }
-
-        function str2.strtok(str1,";"n)
-        {
+        function strtok(str1, str2, n) {
+             str2 = str1.split(" ");
+            return str2;
 
         }
+        document.getElementById("txt").innerHTML = str2;
+
+
+        alert(str2);
     </script>
 </body>
+
 </html>
