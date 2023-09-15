@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test3Phase11</title>
+</head>
+<body>
+    <script type="text/JavaScript" language="JavaScript">
+        var version=navigator.appVersion;
+        console.log("Le code name de votre browser est: "+navigator.appCodeName);
+        console.log("Le nom ou la marque du browser est: "+navigator.appName);
+        console.log("Les informations sur la version sont: "+navigator.appName );
+        console.log("Le browser à comme usager-agent: "+navigator.userAgent);
+        console.log("");
+      if(version.indexOf('Win')>-1)
+      {
+        console.log("<br/>Vous êtes sous l'environnement Windows");
+        console.log("<br/>");
+      }
+      if(navigator.usager-agent.indexOf('firefox')>-1)
+      {
+        console.log("Vous utilisez un navigateur Chrome");
+      }
+      else if(version.indexOf('MSIE')>-1)
+      {
+        console.log("Vous utulisez un navigateur Microsoft INternet Exploreur");
+      }
+      else
+      {
+        console.log("vous utilisez un navigateur inconnu");
+      }
+    </script>
+    
+</body>
+</html>
