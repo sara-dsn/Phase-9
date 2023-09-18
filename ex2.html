@@ -5,24 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>phase 9</title>
-</head>
-  <p id="txt"></p>
-<body>
-    <p id="txt"></p>
     <script>
+
+        var str1 = "robert ;dupont ;amiens ;80000 ";
+        var str2=";";
+        var n=2;
         
-         strtok(str1," ") 
+         function strtok(str1,str2,n) 
          {
-            var str1 = window.prompt("Entrez vos mots à lister: ");
-            var str2 = str1.split(";");
-            return str2;
-
+           var tab = str1.split(str2);
+            return tab[n];
         }
-        document.getElementById("txt").innerHTML = str2;
+        // document.getElementById("txt").innerHTML = str2;
+
+        alert(strtok(str1,str2,n)); 
 
 
-        alert(str2);
+
+        // alert(str2);
     </script>
+</head>
+  
+<body>
+    
+    <p id="txt"></p>
+   
 </body>
 
 </html>
